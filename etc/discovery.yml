@@ -1,0 +1,97 @@
+API_ROOT: null
+AWS_SES_REGION_ENDPOINT: email.us-east-1.amazonaws.com
+AWS_SES_REGION_NAME: us-east-1
+BACKEND_SERVICE_EDX_OAUTH2_KEY: discovery-backend-service-key
+BACKEND_SERVICE_EDX_OAUTH2_PROVIDER_URL: http://18.140.83.70/oauth2
+BACKEND_SERVICE_EDX_OAUTH2_SECRET: discovery-backend-service-secret
+CACHES:
+    default:
+        BACKEND: django.core.cache.backends.memcached.MemcachedCache
+        KEY_PREFIX: discovery
+        LOCATION:
+        - memcache
+CORS_ORIGIN_WHITELIST: []
+CSRF_COOKIE_SECURE: false
+DATABASES:
+    default:
+        ATOMIC_REQUESTS: 'false'
+        CONN_MAX_AGE: 60
+        ENGINE: django.db.backends.mysql
+        HOST: localhost
+        NAME: discovery
+        OPTIONS:
+            connect_timeout: 10
+            init_command: SET sql_mode='STRICT_TRANS_TABLES'
+        PASSWORD: fYEei90qY5rHnelAnSN0ZuJlnRVtHA3ukCg
+        PORT: 3306
+        USER: discov001
+    read_replica:
+        ATOMIC_REQUESTS: 'false'
+        CONN_MAX_AGE: 60
+        ENGINE: django.db.backends.mysql
+        HOST: localhost
+        NAME: discovery
+        OPTIONS:
+            connect_timeout: 10
+            init_command: SET sql_mode='STRICT_TRANS_TABLES'
+        PASSWORD: fYEei90qY5rHnelAnSN0ZuJlnRVtHA3ukCg
+        PORT: 3306
+        USER: discov001
+DEFAULT_PARTNER_ID: 1
+EDX_DRF_EXTENSIONS:
+    OAUTH2_USER_INFO_URL: http://18.140.83.70/user_info
+ELASTICSEARCH_INDEX_NAME: catalog
+ELASTICSEARCH_URL: http://127.0.0.1:9200/
+EMAIL_BACKEND: django_ses.SESBackend
+EMAIL_HOST: localhost
+EMAIL_HOST_PASSWORD: snHHpGUJtWH096MthbKwzDzx1Mj4VsnjDeJ
+EMAIL_HOST_USER: ''
+EMAIL_PORT: 25
+EMAIL_USE_TLS: false
+ENABLE_PUBLISHER: false
+EXTRA_APPS: []
+JWT_AUTH:
+    JWT_AUTH_COOKIE_HEADER_PAYLOAD: edx-jwt-cookie-header-payload
+    JWT_AUTH_COOKIE_SIGNATURE: edx-jwt-cookie-signature
+    JWT_AUTH_REFRESH_COOKIE: edx-jwt-refresh-cookie
+    JWT_ISSUERS:
+    -   AUDIENCE: t0BL63w4AyduFQAjdNeWRIJmsgMrNXim4MS
+        ISSUER: http://18.140.83.70/oauth2
+        SECRET_KEY: HdoJmMk9Q8zTwJeiJivrH27iPkElFBHBr3lcNpTjrV1ZKbhNCxIhIPU8lxZfHXHUZQSiW527O0cAoDUuNoNAskXEg86wgqsKXPTt
+    JWT_PRIVATE_SIGNING_JWK: '{"kty": "RSA", "kid": "QDYX36AF", "e": "AQAB", "n":
+        "wgyAsDgnLohdOR_tUOVYPnTkP6G_lujoOKOUq3D-pkjMt_T6kRJpdGJIn3vDfCdhJSUCUOsrWwJFmC1G30ZrC-uMb9oeJH3-DBCQJIuoD_ynyP3RIth_MAwhIgsLmS_Q9edK3SxHJldj8_7ZlOwU-r0c3swqYRP4N20UXoFHLHNCrWBLYXSfISpVb-2sToDO1SAqDPoc4YxX8YAeswFr4R1NY_YUaPtWrliGaL8mYOjBjyH9hXvKJxqBSkFARCN2mTfK7SVrndg3xRErVJsr9wFrV43zkdRXZML_x8jpl_hmNML_DuUQU6Ea66rG55v2WJMYkFAQrW-GddCTXwUbKw",
+        "d": "EbdxgmVGEoYJuN703FdsJJuogTTD2MPf-9fXiYWSAl2QL1VzEQ60yRb2GXWDxhCUWn9UBE5MUY1WDExJ9bWorVhupIGuEdfc-34BowyLJhaDvSKLVxqcFidtWP3YK77FXcYlvCbAQjxlWFASznl1euUMPz01u1JG7cyMOQqllGWy3DwxTQTc_SvZ4gblmEQBNlPJxUwzxMiYl0SiHcPmBpHpQ42YAPPvC9WQwCCjEiyy3zt3o8Iu5GezRRGV2CSQbNHuCXL_zj_8GyMRJSxBB4U4rAQckPiAASb_uLX_HsSZ0LsCJEwCUFn7qe2Na5iXbk9ri5k_E7nWuWNfmmrxoQ",
+        "p": "1j5W6Mlmp96feeWozFraKNN1ROqy8kviUTzajY9gkkudZk7LAU_8M3ZRvAfeRFox_IZBTDZPorK8d4dte15HWYIryXstSSXj59tWo39e81d019dciC5o6zmYG9V0OfoCtMYm7XAVcNdJqZeUEIruhRIosK8qiatabKScx5_ZguE",
+        "q": "596NPrBZWfu4RVRexofqcPCTQKVZU1DfbSiVKgMMI_y9q0AWR2u-gwtVYbg_tLRMv4S5SzHfb3Tw40lTcPd4MBzUOJP1ulIkV_54vNUcd3C2ASsPvqSkOEPEtJjGHU4B_XIVLOHeduOspaLYbMRCAogz8pBmbHYuaO_lWegXa4s"}'
+    JWT_PUBLIC_SIGNING_JWK_SET: '{"keys": [{"kty": "RSA", "kid": "QDYX36AF", "e":
+        "AQAB", "n": "wgyAsDgnLohdOR_tUOVYPnTkP6G_lujoOKOUq3D-pkjMt_T6kRJpdGJIn3vDfCdhJSUCUOsrWwJFmC1G30ZrC-uMb9oeJH3-DBCQJIuoD_ynyP3RIth_MAwhIgsLmS_Q9edK3SxHJldj8_7ZlOwU-r0c3swqYRP4N20UXoFHLHNCrWBLYXSfISpVb-2sToDO1SAqDPoc4YxX8YAeswFr4R1NY_YUaPtWrliGaL8mYOjBjyH9hXvKJxqBSkFARCN2mTfK7SVrndg3xRErVJsr9wFrV43zkdRXZML_x8jpl_hmNML_DuUQU6Ea66rG55v2WJMYkFAQrW-GddCTXwUbKw"}]}'
+    JWT_SIGNING_ALGORITHM: RS512
+LANGUAGE_CODE: en
+MEDIA_STORAGE_BACKEND:
+    DEFAULT_FILE_STORAGE: django.core.files.storage.FileSystemStorage
+    MEDIA_ROOT: /edx/var/discovery/media
+    MEDIA_URL: /media/
+OPENEXCHANGERATES_API_KEY: ''
+PARLER_DEFAULT_LANGUAGE_CODE: en
+PARLER_LANGUAGES:
+    1:
+    -   code: en
+    default:
+        fallbacks:
+        - en
+        hide_untranslated: 'False'
+PLATFORM_NAME: Your Platform Name Here
+PUBLISHER_FROM_EMAIL: null
+SECRET_KEY: 99wfKxw92YBeS5uWXGL7yos4sJZL8oHQLtWwuJ8rkKdYY6hMAPSYYputO5FFVR4Nzit1dQtt22uomDiGutuHplUBGD8V6R5Q3QpW
+SESSION_EXPIRE_AT_BROWSER_CLOSE: false
+SOCIAL_AUTH_EDX_OAUTH2_ISSUER: http://18.140.83.70
+SOCIAL_AUTH_EDX_OAUTH2_KEY: discovery-sso-key
+SOCIAL_AUTH_EDX_OAUTH2_LOGOUT_URL: http://18.140.83.70/logout
+SOCIAL_AUTH_EDX_OAUTH2_SECRET: discovery-sso-secret
+SOCIAL_AUTH_EDX_OAUTH2_URL_ROOT: http://18.140.83.70
+SOCIAL_AUTH_REDIRECT_IS_HTTPS: false
+STATICFILES_STORAGE: django.contrib.staticfiles.storage.StaticFilesStorage
+STATIC_ROOT: /edx/var/discovery/staticfiles
+TIME_ZONE: UTC
+USERNAME_REPLACEMENT_WORKER: OVERRIDE THIS WITH A VALID USERNAME
+
